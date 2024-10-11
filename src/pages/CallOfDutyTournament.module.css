@@ -1,0 +1,201 @@
+.tournamentPage {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align contents to the left */
+    padding: 20px;
+    background-color: black;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    min-height: 100vh; /* Ensure full height for better layout */
+    position: relative;
+}
+
+.backButton {
+    position: absolute;
+    top: 40px;
+    
+    left: 20px;
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+    font-size: 10px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.backButton:hover {
+    color: #007bff;
+}
+
+.tournamentImage {
+    width: 100%;
+    height: auto;
+    border-radius: 1px;
+    margin: 20px 0; 
+    top:90px;
+}
+
+.titleContainer {
+    width: 100%;
+    text-align: left;
+    margin-top: -30px;
+}
+
+.gameTitle {
+    font-size: 19px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+  
+.trophyIcon {
+    color: gold;
+    font-size: 0.6rem;
+    margin-right: 9px;
+}
+  
+.priceText {
+    font-size: 0.5rem;
+    color: white;
+    font-weight: bold;
+}
+  
+.trophyPrice {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align price to the left */
+    background-color: #2e2e2e;
+    padding: 9px;
+    border-radius: 8px;
+    margin: 10px 0;
+    width: fit-content;
+}
+
+.gameDescription {
+    margin: 20px 0;
+    font-size: 0.7rem;
+    text-align: left;
+    width: 100%; /* Make sure the text expands full width */
+}
+
+.tournamentDetails {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start; /* Align details to the left */
+    width: 100%; /* Full width */
+    font-size: 0.6rem;
+    text-align: left;
+    gap: 20px; /* Add space between items */
+}
+
+.detailItem {
+    display: flex;
+    align-items: center;
+}
+
+.calendarIcon {
+    color: #ffffff;
+    font-size: 0.8rem;
+    margin-right: 10px;
+}
+
+.joinButton {
+    background-color: olivedrab;
+    color: white;
+    padding: 10px 20px;
+    font-size: 0.8rem; /* Increased size slightly */
+    font-weight: bold;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align icon and text to the left */
+    margin: 20px 0;
+}
+
+.joinButton:hover {
+    background-color: #218838;
+}
+
+.controllerIcon {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+.tournamentInfoHeading {
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 30px;
+    text-align: left;
+    width: 100%;
+}
+.tabContainer {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+    
+  }
+  
+  .tabButton {
+    padding: 10px 20px;
+    background-color: #1e1e1e;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .tabButton:hover {
+    background-color: #444;
+  }
+  
+  .activeTab {
+    background-color: #007bff;
+  }
+  
+  .leaderboardContainer, .fixturesContainer {
+    display: flex;
+    margin-top: 20px;
+    width: 100%;
+    background-color: #181818;
+    top:0;
+  }
+  
+  .leaderboardTable {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .leaderboardTable th, .leaderboardTable td {
+    border: 1px ;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    font-size: 0.7rem;
+  }
+  
+  .leaderboardTable th {
+    background-color: #1e1e1e;
+  }
+  
+  .greenArrow {
+    color: green;
+    margin-left: 5px;
+    animation:blink 2s infinite;
+  }
+  
+  .redArrow {
+    color: red;
+    margin-left: 5px;
+    animation:blink 1s infinite;
+   
+  }
+  
+  @keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+  }
+
+  

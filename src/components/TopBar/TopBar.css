@@ -1,0 +1,169 @@
+/* TopBar Styles */
+.topBar {
+  width: 100%;
+  height: 60px;
+  background-color: #1e1e1e; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  /* Disable wrapping and adjustments */
+  white-space: nowrap; /* Prevent elements from wrapping to a new line */
+}
+
+/* Logo Styling */
+.logo {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: 'Shrikhand', cursive;
+}
+
+.logo .icon {
+  margin-right: 8px;
+  color: chartreuse; 
+  font-size: 1.5rem;
+}
+
+/* Search Box Styling */
+.searchBox {
+  flex-grow: 1;
+  padding: 0 20px;
+  min-width: 150px;
+  display: flex;
+}
+
+.searchBox input {
+  width: 100%;
+  max-width: 700px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: #333;
+  color: #ffffff;
+  box-sizing: border-box;
+}
+
+.searchBox input:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+}
+
+/* Right Section Icons */
+.icons {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+
+.icons .icon {
+  margin-left: 20px;
+  cursor: pointer;
+  color: #ffffff; 
+  font-size: 1.5rem;
+}
+
+/* Balance Styling */
+.balance {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.coinIcon {
+  margin-right: 5px;
+  color: gold; 
+}
+
+.balance span {
+  color: #ffffff;
+}
+
+/* User Profile Styles */
+.userProfile {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.userName {
+  color: #ffffff;
+  font-size: 0.8rem;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+}
+
+.onlineStatus {
+  background-color: olivedrab; /* Green color for online status */
+  color: #ffffff;
+  padding: 4px 8px; 
+  border-radius: 0;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  animation: blink 1s infinite; /* Blink animation added */
+}
+
+.dropdownIcon {
+  color: #ffffff;
+  font-size: 0.8rem;
+  margin-left: 5px; 
+}
+
+/* Blinking animation */
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+/* Remove Responsive Design */
+/* No media queries, elements will not adjust or resize based on screen width */
+
+/* Hover effects */
+.icons .icon:hover,
+.balance:hover,
+.userProfile:hover {
+  color: #ff9800; 
+  transition: color 0.3s ease;
+}
+
+/* Suggestions List Styling */
+.suggestionsList {
+  position: absolute;
+  background-color: #333;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  z-index: 1000;
+  max-height: 200px;
+  overflow-y: auto;
+  width: 100%;
+}
+
+.suggestionItem {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.suggestionItem:hover {
+  background-color: #f0f0f0;
+}

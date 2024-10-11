@@ -1,0 +1,382 @@
+/* Overall page container */
+.tournamentPage {
+    display: flex;
+    flex-direction: column;
+    height: 160vh; 
+    padding: 20px; 
+    background-color: #000000; 
+    color: #ffffff; 
+}
+
+  
+
+.profileSetupContainer {
+    
+    background-color: #1e1e1e; 
+    padding: 30px;
+    margin-bottom: 8px;
+    margin-top: 40px; /* Adjusted to prevent touching the TopBar */
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(255, 255, 255, 0.1);
+    max-width: 100%; 
+    align-self: center; 
+    text-align: center;
+    color: #ffffff; 
+    width: 100%;
+   
+
+    
+}
+
+.profileSetupContainer h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    margin-top: 0;
+    color: #ffffff; 
+    padding: 2px;
+    text-align: left;
+    position: relative; /* Align the heading to the left */
+}
+
+.profileSetupContainer p {
+    font-size: 0.7rem;
+    margin: 10px 0;
+    color: #ffffff; 
+    line-height: 1.6;
+    max-width: 100%;
+    text-align: left; /* Align paragraph text to the left */
+}
+
+.completeProfileBtn {
+    background-color: chartreuse; 
+    color: #000000; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.completeProfileBtn .profileIcon {
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+.completeProfileBtn:hover {
+    background-color: #cccccc; 
+}
+
+
+
+.tournamentRow {
+    display: flex;                       /* Use flexbox for layout */
+    justify-content: space-between;      /* Space out child elements */
+    background-color:#000000;          /* Background color for the row */
+    padding: 20px;                       /* Padding around the content */
+    border-radius: 8px;                  /* Rounded corners */
+    box-shadow: 0px 2px 10px rgba(255, 255, 255, 0.1); /* Subtle shadow for depth */
+    color: #ffffff;                      /* Text color */
+    font-size: 1.3rem; 
+    font-weight: bolder;                  /* Font size */
+    align-items: center;                 /* Center align items vertically */
+    margin-top: 20px;                   /* Space above the tournament row */
+}
+
+/* Game Option Container */
+.gameOption {
+    display: flex;                      /* Flex layout to align items */
+    justify-content: space-between;      /* Space between image and text */
+    align-items: center;                 /* Center items vertically */
+    flex: 1;                             /* Allow game options to grow equally */
+    padding: 10px;                       /* Padding around each game option */
+    margin: 0 10px; 
+    background-color:#1e1e1e;                 /* Horizontal margin for spacing */
+}
+
+/* Button Styling */
+.continueBtn, .quickMatchBtn {
+    display: flex;                       /* Flexbox for horizontal alignment */
+    align-items: center;                 /* Center items vertically */
+    background-color:#1e1e1e;          /* Your button color */
+    color: white;                        /* Button text color */
+    border: none;                        /* Remove default button border */
+    border-radius: 8px;                 /* Rounded corners */
+    padding: px 15px;                  /* Padding for the button */
+    cursor: pointer;                     /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; 
+    font-size: 1.5rem;                    /* Font size */
+    margin-left: 15px;                  /* Space between the button and icon */
+}
+
+/* Button Hover Effect */
+.continueBtn:hover, .quickMatchBtn:hover {
+    background-color: #1976d2;          /* Darker blue on hover */
+}
+
+/* Image Styling */
+.gameImage {
+    width: 50px;                        /* Set image width */
+    height:120px;                       /* Maintain aspect ratio */
+    margin-right: 1px;                /* Space between image and text */
+}
+
+/* Game Details */
+.gameDetails {
+    flex-grow: 1;  
+                         /* Allow details to take available space */
+}
+
+/* Play Icon */
+.playIcon {
+    margin-left: 10px;
+      
+                
+}
+
+/* Additional styles for the paragraph in game details */
+.gameDetails p {
+    font-size: 0.7rem;                  /* Adjust paragraph font size */
+    margin: 0;  
+    margin-top: 8px;                        /* Remove default margin */
+}
+.playButton {
+    display: flex;                        /* Flexbox for horizontal alignment */
+    align-items:center;                  /* Center items vertically */
+    background-color: transparent;        /* Transparent background */
+    color:#fff;                       /* Text color */
+    border: none;                         /* No border for underline effect */
+    margin-top: 23px;
+    border-radius: 0;                    /* No rounding for underline */
+    padding: 10px 15px;                   /* Padding for the button */
+    cursor: pointer;                       /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+    font-size: 0.7rem;                      /* Font size */
+    text-decoration: none;                 /* Remove default underline */
+}
+.playButton:hover {
+    border-bottom: 1px solid #fff;    /* Underline color on hover */
+}
+
+/* Active Effect */
+.playButton:active {
+    transform: translateY(0);             /* Reset position when active */
+}
+
+/* Sort and Filter Row */
+.tournamentHeaderRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0; /* Space between rows */
+    color: #ffffff; /* White text */
+}
+
+.tournamentHeaderRow h3 {
+    margin: 0;
+    font-size: 1.0rem;
+}
+
+.sortFilterContainer {
+    display: flex;
+    gap: 20px;
+}
+
+.sortBy,
+.filter {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #ffffff; /* White text */
+}
+
+.icon {
+    margin-right: 5px;
+    font-size: 0.7rem;
+}
+
+/* COD Tournament Container */
+.codTournamentContainer {
+    display:flex; /* Use flexbox for side-by-side layout */
+    justify-content: space-between; /* Distribute space evenly */
+    margin-top: 20px; /* Add some space above the container */
+}
+
+.codTournament {
+    background-color: #1e1e1e; /* Container background color */
+    padding: 15px; /* Inner padding */
+    border-radius: 8px; /* Rounded corners */
+    width: 30%; /* Width for each container */
+    text-align: center; /* Center text inside */
+}
+
+/* Button styles */
+.buttonContainer {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center the buttons horizontally */
+}
+
+.joinBtn,
+.viewDetailsBtn {
+    margin: 0.3rem; /* Add margin for spacing */
+    padding: 10px 20px; /* Add padding for button size */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: background-color 0.3s; 
+    font-size: 0.66rem;
+    width: 105%;
+}
+
+.joinBtn {
+    background-color: #28a745; /* Green background for join button */
+    color: white; /* White text */
+}
+
+.joinBtn:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+.viewDetailsBtn {
+    background-color:#2e2e2e; /* Light background for view details button */
+    color:#cccc; /* Dark text color */
+    font-size: 0.5rem; /* Font size */
+    margin-left: 4px;
+
+
+
+    
+}
+.icon {
+    margin-right: 8px; /* Adds space between icon and text */
+    font-size: 0.7rem; /* Increases icon size */
+    color: #fff; /* Make the icon white */
+  }
+  
+ 
+
+.viewDetailsBtn:hover {
+    background-color: #e0e0e0; /* Slightly darker on hover */
+}
+
+/* Calendar icons */
+.calendarIcons {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 10px; /* Space between icons */
+    margin: 10px 0;
+    font-size: 8px; /* Margin for the icon container */
+}
+
+.calendarIcon {
+    background-color: #1e1e1e; /* Example background color */
+    padding: 10px; /* Padding inside each icon */
+    border-radius: 5px; /* Rounded corners */
+    color: white; /* Text color */
+    text-align: center;
+  
+}
+
+.tournamentImage {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 8px; /* Rounded corners for a softer look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    margin-bottom: 10px; /* Space below the image */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .tournamentRow {
+        flex-direction: column;
+    }
+
+    .gameOption {
+        width: 50%;
+    }
+
+    .codTournamentContainer {
+        flex-direction: row;
+        font-size: 0.4rem;
+        
+    }
+    .joinBtn {
+        font-size: 0.4rem; /* Smaller button text size */
+    }
+    .calendarIcons{
+        font-size: 0.3rem; /* Smaller icon size */
+    }
+    .Image{
+        width: 100%; /* Make the image responsive */
+        height: auto; /* Maintain the aspect ratio */
+        
+    }
+    .trophyIcon{
+        font-size: 0.3rem; /* Smaller trophy icon size */
+    }
+    .priceText{
+        font-size: 0.2rem; /* Smaller trophy price size */
+    }
+}
+@media (max-width: 768px) { /* Adjust the width as needed */
+    .profileSetupContainer h2 {
+        font-size: 1.2rem; /* Smaller font size for minimized view */
+    }
+
+    .profileSetupContainer p {
+        font-size: 0.5rem; /* Smaller paragraph font size for minimized view */
+    }
+}
+
+@media (max-width: 768px) { /* Adjust the width as needed */
+    .gameDetails h3 {
+        font-size: 0.7rem; /* Smaller font size for minimized view */
+    }
+
+    .gameDetails p {
+        font-size: 0.4rem; /* Smaller paragraph font size for minimized view */
+    }
+
+    .playButton {
+        font-size: 0.4rem; /* Smaller button text size */
+    }
+
+    .tournamentRow {
+        flex-direction: row; /* Stack vertically on small screens */
+        align-items:center; /* Align items to the left */
+        margin-bottom: 20px; /* Space between rows */
+    }
+}
+.trophyPrice {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2e2e2e; /* Dark background */
+    padding: 10px;
+    border-radius: 8px; /* Rounded corners */
+    width: fit-content;
+    margin: 10px 0; /* Spacing around the box */
+  }
+  
+  .trophyIcon {
+    color: gold; /* Trophy color */
+    font-size: 0.5rem; /* Adjust size */
+    margin-right: 8px; /* Space between the trophy and price */
+  }
+  
+  .priceText {
+    font-size: 0.5rem;
+    color: white; /* Text color */
+    font-weight: bold;
+  }
+  .gameTitle {
+    font-size: 0.8rem;
+    color: #ffffff;
+    margin: 10px 0;
+    text-align:left; /* Optional: Center align the text */
+  }
+  
+
+  

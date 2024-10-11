@@ -1,0 +1,117 @@
+.contentLockerPage {
+  padding: 80px;
+  color: #ffffff;
+  background-color: #1e1e1e;
+  min-height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px; /* Ensure distance from top bar */
+}
+
+.contentLockerPage h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  animation: fadeIn 0.5s ease forwards;
+  opacity: 0;
+}
+
+.contentLockerPage p {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 0 20px;
+  font-size: 1.2rem;
+  animation: slideIn 0.7s ease forwards;
+  opacity: 0;
+  animation-delay: 0.3s;
+}
+
+.lockedContent {
+  background-color: #2c2c2c;
+  padding: 40px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+  max-width: 500px;
+  margin: 0 auto;
+  transition: transform 0.3s ease;
+  position: relative; /* For absolute positioning of icons */
+}
+
+.lockedContent:hover {
+  transform: translateY(-5px);
+}
+
+.lockedContent h3 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.lockedContent p {
+  margin-bottom: 20px;
+}
+
+.unlockButton {
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-size: 1rem;
+  display: flex;
+  align-items: center; /* Center icon and text */
+}
+
+.unlockButton:hover {
+  background-color: #e64a19;
+  transform: translateY(-2px);
+}
+
+.lockIcon, .unlockIcon, .trophyIcon {
+  font-size: 40px; /* Set icon size */
+  position: absolute; /* Positioning for animations */
+  opacity: 0; /* Initial opacity */
+  animation: fadeIn 0.5s ease forwards; /* Fade-in animation for icons */
+}
+
+.lockIcon {
+  top: -30px; /* Position above content */
+  left: 50%;
+  transform: translateX(-50%); /* Center icon */
+  animation-delay: 0.4s; /* Delay for icon animation */
+}
+
+.unlockIcon {
+  margin-right: 8px; /* Space between icon and text */
+}
+
+.trophyIcon {
+  bottom: -30px; /* Position below content */
+  right: 50%;
+  transform: translateX(50%); /* Center icon */
+  animation-delay: 0.6s; /* Delay for icon animation */
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}

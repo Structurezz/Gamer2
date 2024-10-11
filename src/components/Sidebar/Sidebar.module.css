@@ -1,0 +1,73 @@
+/* src/components/Sidebar/Sidebar.module.css */
+
+.sidebar {
+  width: 190px; /* Fixed width for the sidebar */
+  height: 60vh; /* Full height to cover the viewport */
+  
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: space-between; /* Space between logo, menu, and logout */
+  padding: 20px; /* Padding for all sides */
+  background-color: #1e1e1e; 
+  
+}
+
+.logoContainer {
+  padding: 0 10px; /* Adjusted padding for better spacing */
+  margin-bottom: 20px; /* Reduced margin for compactness */
+}
+
+.logo {
+  display: flex;
+  align-items: center; /* Center logo vertically */
+  color: #ffffff; /* Logo color */
+  font-size: 1.9rem; /* Increased size for prominence */
+  font-weight: bold; /* Bold text for emphasis */
+}
+
+.menu {
+  display: flex;
+  flex-direction: column; /* Stack menu items vertically */
+  flex-grow: 1; /* Allow menu to grow and take available space */
+}
+
+.menuItem {
+  display: flex;
+  align-items: center; /* Center menu item contents */
+  padding: 19px 20px; /* Reduced padding for compactness */
+  color: #ffffff; /* Text color */
+  cursor: pointer; /* Pointer on hover */
+  text-decoration: none; /* Remove underline from links */
+  transition: background 0.3s, color 0.3s;
+  font-size: 0.9rem;  /* Smooth transition */
+}
+
+.menuItem:hover {
+  background-color: #333333; /* Dark background on hover */
+  color: #ff9800; /* Highlight color on hover */
+}
+
+.icon {
+  margin-right: 10px; /* Spacing between icon and text */
+  font-size: 1.3rem; /* Increased icon size */
+}
+
+.logout {
+  display: flex; /* Flexbox for alignment */
+  align-items: center; /* Center logout button content */
+  justify-content: center; /* Center the content */
+  padding: 12px 20px; /* Padding for the logout button */
+  background-color: #cc0000; /* Red background */
+  color: #ffffff; /* White text */
+  cursor: pointer; /* Pointer on hover */
+  border-radius: 5px; /* Rounded corners for the button */
+  transition: background 0.3s, color 0.3s; /* Smooth transition */
+  font-size: 0.9rem; /* Smaller font size for logout */
+  margin-left: 12px; /* Margin for positioning */
+  text-align: center; /* Center text */
+}
+
+.logout:hover {
+  background-color: #b30000; /* Darker red on hover */
+  color: #ffffff; /* Maintain white text on hover */
+}

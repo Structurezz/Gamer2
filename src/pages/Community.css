@@ -1,0 +1,59 @@
+.communityPage {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    margin-top: 80px;
+}
+
+.communityTitle {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ff9800;
+}
+
+.communityDescription {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.communityFeatures {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature {
+    background-color: #2a2a2a;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+    margin: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(255, 152, 0, 0.3);
+}
+
+.featureIcon {
+    font-size: 2rem;
+    color: #ff9800;
+    margin-bottom: 10px;
+}
+
+.feature h3 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.feature p {
+    font-size: 1rem;
+    color: #d0d0d0;
+}

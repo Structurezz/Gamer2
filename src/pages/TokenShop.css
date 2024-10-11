@@ -1,0 +1,113 @@
+/* General Page Styling */
+.tokenShopPage {
+    padding: 40px 20px; /* Padding for sides and bottom */
+    margin-top: 150px; /* Added margin to create space from the top bar */
+    color: #ffffff;
+    background-color: #1e1e1e;
+    min-height: 100vh;
+    text-align: center;
+    box-sizing: border-box; /* Ensures padding and border widths are included in the element's total width/height */
+}
+
+.tokenShopPage h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ff9800;
+}
+
+.tokenShopPage p {
+    font-size: 1.1rem;
+    color: #bfbfbf;
+    margin-bottom: 40px;
+}
+
+/* Token Item Grid */
+.tokenItems {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Individual Token Item */
+.tokenItem {
+    background-color: #2a2a2a;
+    border-radius: 15px;
+    padding: 30px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.tokenItem:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Token Icon */
+.tokenIcon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: #ff9800;
+    animation: rotateToken 5s infinite linear;
+}
+
+@keyframes rotateToken {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Premium and Elite Styling */
+.premium {
+    border: 2px solid #ffcc00;
+}
+
+.elite {
+    border: 2px solid #d4af37;
+}
+
+/* Coin Icon and Price */
+.tokenDetails {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.coinIcon1 {
+    font-size: 1.5rem;
+    color: #ffd700;
+    animation: bounceCoin 2s infinite;
+}
+
+@keyframes bounceCoin {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+.tokenPrice {
+    font-size: 1.1rem;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Buy Button */
+.buyButton {
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.buyButton:hover {
+    background-color: #e68900;
+    transform: translateY(-3px);
+}
